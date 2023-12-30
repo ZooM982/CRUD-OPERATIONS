@@ -22,6 +22,58 @@ body{
   background: linear-gradient(71deg, #FEAF00 19.35%, #F8D442 90.12%)
 }
 
+@media screen and (max-width: 800px) {
+  body{
+    overflow: visible;
+  }
+  #home .tabpane{
+    height: 600px;
+    background-color: blueviolet;
+    margin-top: -800px;
+    margin-left: 200px;
+    text-align: center;
+  }
+  .topbar{
+    background-color: #FFF;
+    height: 70px;
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: -400px;
+    margin-left: 0px;
+    padding: 15px;
+    z-index: inherit;
+  }
+  .topbar form{
+    width: 50%;
+    margin: auto;
+  }
+  
+  .topbar .form-control{
+    width: 150px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  #home .side-bar{
+    background: #F2EAE1;
+    height: auto;
+    width: 200px;
+  }
+  #home .list-group{
+    display: inline-flex;
+  }
+  #home .home-image{
+    width: 200px;
+  }
+  #home .text-center{
+    margin-bottom: 50px;
+  }
+
+  #home .home-text{
+    margin-top: 30px;
+  }
+  
+}
+
 /* -------------SIGN IN---------------- */
 
 #signIn .card{
