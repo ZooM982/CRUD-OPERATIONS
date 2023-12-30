@@ -1,38 +1,294 @@
-.App {
+.topbar{
+  background-color: #FFF;
+  height: 83px;
+  flex-shrink: 0;
+  margin-top: -283px;
+  margin-left: 224px;
+  padding: 15px;
+  z-index: inherit;
+}
+.topbar form{
+  width: 30%;
+}
+
+.topbar .form-control{
+  width: 212px;
+  height: 37px;
+  flex-shrink: 0;
+}
+
+body{
+  overflow: hidden;
+  background: linear-gradient(71deg, #FEAF00 19.35%, #F8D442 90.12%)
+}
+
+/* -------------SIGN IN---------------- */
+
+#signIn .card{
+  flex-shrink: 0;
+  padding: 30px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+#signIn .head-sign h1{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#singIn .form-label{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#singIn .body-sign h3{
+  margin-top: 20px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#singIn .body-sign p{
+  color: #6C6C6C;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#signIn .form-label{
+  color: #6C6C6C;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#signIn .form-control{
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  background: #FFF;
+  height: 44px;
+  flex-shrink: 0;
+}
+#signIn button{
+  border-radius: 4px;
+  background: #FEAF00;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 44px;
+}
+
+#signIn h6{
+  color: #6C6C6C;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#signIn a{
+  text-decoration: none;
+}
+#signIn span{
+  color: #FEAF00;
+}
+
+
+/* ------------HOME----------------- */
+#home{
+  display: flex;
+  flex-direction: column;
+  background: #F8F8F8;;
+  height: 100%;
+}
+
+#home .side-bar{
+  background: #F2EAE1;
+  height: auto;
+  
+}
+
+#home .tabpane{
+  height: 600px;
+  background-color: initial;
+  margin-top: -200px;
+  text-align: center;
+}
+#home .list-group{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home .list-group a{
+  background-color: initial;
+  margin: 3px;
+  border: none;
+}
+#list-tab :active{
+  background: #FEAF00 !important;
+  color: #FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home .home-image{
+  background: #F2EAE1;
+}
+#home .home-image h1{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home .home-image{
+  background: #F2EAE1
+}
+#home .home-image .image{
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+  fill: #C4C4C4;
+}
+#home .home-image .image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  margin: 5px;
+  object-fit: cover;
+}
+
+#logout{
+  background-color: initial !important;
+  border: none;
+  color: #000 !important;
+  margin: 60px;
+  font-size: 15px;
+}
+
+/* ------------DASHBOARD----------------- */
+#dashboard{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 300px;
+  width: 100%;
+  padding-top: 30px;
+  background: #F8F8F8;
+}
+#dashboard .card{
+  width: 255px;
+  height: 157px;
+  padding: 10px;
+  flex-shrink: 0;
+  margin: 0 10px;
+  border: none;
+}
+#dashboard .v1{
+  border-radius: 8px;
+  background: #F0F9FF;
+}
+#dashboard .v2{
+  border-radius: 8px;
+  background: #FEF6FB;
+}
+#dashboard .v3{
+  border-radius: 8px;
+  background: #FEFBEC;
+}
+#dashboard .v4{
+  border-radius: 8px;
+  background: linear-gradient(110deg, #FEAF00 18.27%, #F8D442 91.84%);
+}
+/* ------------STUDENT----------------- */
+#etudiant {
+  background: #F8F8F8;
+  overflow-y: scroll;
+  height: 500px;
+}
+#etudiant tbody {
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 20px;
+}
+#etudiant tbody img{
+  width: 65px;
+  height: 55px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+#etudiant thead {
+  border-top: 2px solid #ACACAC;
+  height: 50px;
+  margin-top: 10px;
+}
+#etudiant th{
+  text-align: left;
+  margin: 5px;
+  color: #ACACAC;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#etudiant table {
+  background-color: #6C6C6C;
+}
+#etudiant tbody  tr{
+  background-color: #b11616 !important;
+  height: 55px;
+}
+#etudiant td{
+  height: 45px !important;
+  text-align: left;
+  flex-shrink: 0;
+  background: #FFF;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* ------------PAYMENT----------------- */
+#payment{
+  background: #F8F8F8;
+}
+#payment th{
+  border-top: 2px solid #ACACAC;
+  text-align: left;
+  color: #ACACAC;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#payment td{
+  text-align: left;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
