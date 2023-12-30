@@ -27,11 +27,14 @@ body{
     overflow: visible;
   }
   #home .tabpane{
-    height: 600px;
-    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    margin: -100px 0 0 190px ;
+    position: relative;
+    /* background-color: blueviolet;
     margin-top: -800px;
     margin-left: 200px;
-    text-align: center;
+    text-align: center; */
   }
   .topbar{
     background-color: #FFF;
@@ -56,13 +59,13 @@ body{
   #home .side-bar{
     background: #F2EAE1;
     height: auto;
-    width: 200px;
+    width: 50%;
   }
   #home .list-group{
     display: inline-flex;
   }
   #home .home-image{
-    width: 200px;
+    width: 50%;
   }
   #home .text-center{
     margin-bottom: 50px;
@@ -70,6 +73,24 @@ body{
 
   #home .home-text{
     margin-top: 30px;
+  }
+  #dashboard{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding-top: 0px;
+    background: #F8F8F8;
+  }
+  #dashboard .v1{
+    width: 65px;
+    height: 57px;
+    padding: 0px;
+    margin: 0;
+    background-color: #000;
+    border: none;
+  }
+  #dashboard,#etudiant,#payment{
+    margin-top: -500px;
   }
   
 }
